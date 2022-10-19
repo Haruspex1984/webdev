@@ -1,0 +1,19 @@
+form {
+    width: 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    font-family: Ubuntu-L, Arial, Helvetica, sans-serif;
+}
+
+.content_field {
+    display: block;
+    width: 40%;
+    margin-bottom: 2%;
+    font-family: Ubuntu-L, Arial, Helvetica, sans-serif;
+}
+
+.button {
+    border: 1px solid grey;
+    border-radius: 5px;
+}

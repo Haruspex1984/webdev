@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Benjamin Renard">
+    <meta name="description" content="J'apprends à coder un site web">
+    <link rel="stylesheet" href="css/sandbox.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>J'apprends à coder un site</title>
+</head>
+<body>
+    <header>
+
+        <div>  
+            <img src="img/html.svg" alt="Logo HTML" class="header_logo">
+            <img src="img/css.svg" alt="Logo CSS" class="header_logo">
+        </div>   
+        <nav>
+            <a href="/index.html" class="nav_li">Accueil</a>
+            <a href="/sandbox.html" class="nav_li">Sandbox</a>
+            <a href="/contact.html" class="nav_li">Contact</a>
+        </nav> 
+
+    </header>
+
+        <h1>Bienvenue sur la page de contact</h1>
+        <form action="form-processing.html">
+            <div>
+                Votre prénom :<span class="red">*</span>
+                <input type="text" placeholder="Ex : Bertrand" class="content_field">
+                Votre nom :<span class="red">*</span>
+                <input type="text" placeholder="Ex : Miclette" class="content_field">
+                Votre adresse e-mail :<span class="red">*</span>
+                <input type="email" placeholder="Ex : sexybeast@gmail.com" class="content_field">
+                Votre commentaire :<span class="red">*</span>
+                <textarea rows="4" cols="50" placeholder="On s'en branle de votre commentaire" maxlength="10" class="content_field"></textarea>
+            </div>
+            <p>
+                <input type="reset" value="Réinitialiser" class="button">
+                <input type="submit" value="Envoyer" class="button">
+            </p>
+        </form>
+</body>
+</html>
