@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="author" content="Benjamin Renard">
     <meta name="description" content="J'apprends à coder un site web">
-    <link rel="stylesheet" href="css/sandbox.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/contact.css">
     <title>J'apprends à coder un site</title>
 </head>
 <body>
     <header>
 
-        <div>  
+        <div class="header_logo">  
             <img src="img/html.svg" alt="Logo HTML" class="header_logo">
             <img src="img/css.svg" alt="Logo CSS" class="header_logo">
         </div>   
@@ -22,23 +22,49 @@
         </nav> 
 
     </header>
+        <div class="central">
+        <main>
+            <h1>Bienvenue sur la page de contact</h1>
+            <form action="form-processing.html">
+                <div>
+                    Votre prénom :<span class="red">*</span>
+                    <input type="text" placeholder="Ex : Bertrand" class="content_field">
+                    Votre nom :<span class="red">*</span>
+                    <input type="text" placeholder="Ex : Miclette" class="content_field">
+                    Votre adresse e-mail :<span class="red">*</span>
+                    <input type="email" placeholder="Ex : sexybeast@gmail.com" class="content_field">
+                    Votre commentaire :<span class="red">*</span>
+                    <textarea rows="4" cols="50" placeholder="On s'en branle de votre commentaire" maxlength="10" class="content_field"></textarea>
+                </div>
+                <p>
+                    <input type="reset" value="Réinitialiser" class="button">
+                    <input type="submit" value="Envoyer" class="button">
+                </p>
+            </form>
+        </main>
+        <aside>
+            <section>
+                <h2>Téléchargez mon CV ci-dessous</h2>
+                <a href="documents/moncv.pdf"><img src="img/pdf.png" class="pdf_image"></a>
+            </section>
+            <section>
+                <h2>Contactez-moi via ce site</h2>
+                <p>Utilisez le <a href="contact.html">formulaire</a> de contact</p>
 
-        <h1>Bienvenue sur la page de contact</h1>
-        <form action="form-processing.html">
-            <div>
-                Votre prénom :<span class="red">*</span>
-                <input type="text" placeholder="Ex : Bertrand" class="content_field">
-                Votre nom :<span class="red">*</span>
-                <input type="text" placeholder="Ex : Miclette" class="content_field">
-                Votre adresse e-mail :<span class="red">*</span>
-                <input type="email" placeholder="Ex : sexybeast@gmail.com" class="content_field">
-                Votre commentaire :<span class="red">*</span>
-                <textarea rows="4" cols="50" placeholder="On s'en branle de votre commentaire" maxlength="10" class="content_field"></textarea>
-            </div>
-            <p>
-                <input type="reset" value="Réinitialiser" class="button">
-                <input type="submit" value="Envoyer" class="button">
-            </p>
-        </form>
+            </section>
+            <section>
+                <h2>Pour appronfondir HTML et CSS</h2>
+                <p>Utilisez toutes les ressources disponibles sur MDN Web Docs</p>
+                <a href="https://developer.mozilla.org/fr/" target="_blank"><img src="img/mdn-web-docs.svg"></a>
+
+            </section>
+        </aside>
+    </div>
 </body>
+<footer>
+    <address>
+        Éditeur responsable : <a href="mailto:b.renard84@gmail.com" class="email_adress">Benjamin Renard</a>
+        <p>Rue Goffart 2A 4560 Terwagne</p>
+    </address>
+</footer>
 </html>

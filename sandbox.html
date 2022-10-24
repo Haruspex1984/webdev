@@ -10,44 +10,231 @@
 </head>
 <body>
     <header>
+       
+            <div class="header_logo">  
+                <img src="img/html.svg" alt="Logo HTML" class="header_logo">
+                <img src="img/css.svg" alt="Logo CSS" class="header_logo">
+            </div>   
+            <nav>
+                <a href="/index.html" class="nav_li">Accueil</a>
+                <a href="/sandbox.html" class="nav_li">Sandbox</a>
+                <a href="/contact.html" class="nav_li">Contact</a>
+            </nav> 
 
-        <div>  
-            <img src="img/html.svg" alt="Logo HTML" class="header_logo">
-            <img src="img/css.svg" alt="Logo CSS" class="header_logo">
-        </div>   
-        <nav>
-            <a href="/index.html" class="nav_li">Accueil</a>
-            <a href="/sandbox.html" class="nav_li">Sandbox</a>
-            <a href="/contact.html" class="nav_li">Contact</a>
-        </nav> 
+        </header>
+        
+        <div class="central">
+        <main>
 
-    </header>
+            <h1>Bienvenue dans le bac à sable du codage web</h1>
+            <img src="img/home.jpg" alt="Image d'accueil" class="home_image">
+            
+            <section>
+                <h2>Calcul de la dimension des boites standard et alternatives</h2>
+                <div>
+                    <img src="img/mdn-web-docs.svg" alt="MDN" class="image_content">
+                    <img src="img/mdn-web-docs.svg" alt="MDN" class="image_content">
 
+                </div>
 
-    <h1>Bienvenue dans le bac à sable du codage web</h1>
-    <img src="img/home.jpg" alt="Image d'accueil">
-    
-    <section class="">
-        <h2>Calcul de la dimension des boites standard et alternatives</h2>
-        <div>
-            <img src="img/mdn-web-docs.svg" alt="MDN" class="image_content">
-            <img src="img/mdn-web-docs.svg" alt="MDN" class="image_content">
+            </section>
 
-        </div>
+            <section>
+                <h2>Modèle de boites des balises &lt;audio&gt; et &lt;vidéo&gt;</h2>
+                <p>TEXTE</p>
+                <audio controls>
+                    <source src="audio/perception.mp3" type="audio/mpeg">
+                </audio>
+                <p>TEXTE</p>
+                <audio controls>
+                    <source src="audio/perception.mp3" type="audio/mpeg">
+                </audio>
+                <p><span class="red">TEXTE</span></p>
+            </section>
 
-    </section>
+            <section>
+                <h2>Boites FlexBox : <span class="red">justify-content</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Justification des flex items sur l'axe principal</p>
+                    <legend>justify-content : <span class="red">flex-start</span></legend>
+                    <div class="flex_container">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
 
-    <section>
-        <h2>Modèle de boites des balises &lt;audio&gt; et &lt;vidéo&gt;</h2>
-        <p>TEXTE</p>
-        <audio controls>
-            <source src="audio/perception.mp3" type="audio/mpeg">
-        </audio>
-        <p>TEXTE</p>
-        <audio controls>
-            <source src="audio/perception.mp3" type="audio/mpeg">
-        </audio>
-        <p><span class="red">TEXTE</span></p>
-    </section>
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">center</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Justification des flex items sur l'axe principal</p>
+                    <legend>justify-content : <span class="red">center</span></legend>
+                    <div class="flex_container direction_column">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-center</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Justification des flex items sur l'axe principal</p>
+                    <legend>justify-content : <span class="red">center</span></legend>
+                    <div class="flex_container justify_center">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-end</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Justification des flex items sur l'axe principal</p>
+                    <legend>justify-content : <span class="red">flex-end</span></legend>
+                    <div class="flex_container justify_end">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-content</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Justification des flex items sur l'axe principal</p>
+                    <legend>justify-content : <span class="red">space_around</span></legend>
+                    <div class="flex_container justify_space_around">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-content</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Justification des flex items sur l'axe principal</p>
+                    <legend>justify-content : <span class="red">space_between</span></legend>
+                    <div class="flex_container justify_space_between">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-content</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Alignement des flex items sur l'axe secondaire</p>
+                    <legend>align-items <span class="red">stretch</span></legend>
+                    <div class="flex_container container_height">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-content</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Alignement des flex items sur l'axe secondaire</p>
+                    <legend>align-items <span class="red">center</span></legend>
+                    <div class="flex_container container_height align_center">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-content</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Alignement des flex items sur l'axe secondaire</p>
+                    <legend>align-items <span class="red">start</span></legend>
+                    <div class="flex_container container_height align_start">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-content</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Alignement des flex items sur l'axe secondaire</p>
+                    <legend>align-items <span class="red">end</span></legend>
+                    <div class="flex_container container_height align_end">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">justify-content</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Facteur d'élargissement des flex items dans l'espace libre</p>
+                    <legend>Flex-grow <span class="red">1(Madrid)</span></legend>
+                    <div class="flex_container container_height">
+                        <span class="flex_item item_bruxelles flex_grow_2">Bruxelles</span>
+                        <span class="flex_item item_madrid flex_grow_1">Madrid</span>
+                        <span class="flex_item item_oslo">Oslo</span>
+                        <span class="flex_item item_paris flex_grow_1">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                <h2>Boites FlexBox : <span class="red">align-self</span></h2>
+                <fieldset class="flex_fieldset">
+                    <p>Position des flex items par rapport à leurs frères</p>
+                    <legend>Flex-grow <span class="red">1(Madrid)</span></legend>
+                    <div class="flex_container container_height">
+                        <span class="flex_item item_bruxelles">Bruxelles</span>
+                        <span class="flex_item item_madrid align_self_start">Madrid</span>
+                        <span class="flex_item item_oslo align_self_center">Oslo</span>
+                        <span class="flex_item item_paris align_self_end">Paris</span>
+                    </div>
+
+                </fieldset>
+
+                
+            </section>
+        </main>
+        <aside>
+            <section>
+                <h2>Téléchargez mon CV ci-dessous</h2>
+                <a href="documents/moncv.pdf"><img src="img/pdf.png" class="pdf_image"></a>
+            </section>
+            <section>
+                <h2>Contactez-moi via ce site</h2>
+                <p>Utilisez le <a href="contact.html">formulaire</a> de contact</p>
+
+            </section>
+            <section>
+                <h2>Pour appronfondir HTML et CSS</h2>
+                <p>Utilisez toutes les ressources disponibles sur MDN Web Docs</p>
+                <a href="https://developer.mozilla.org/fr/" target="_blank"><img src="img/mdn-web-docs.svg"></a>
+
+            </section>
+        </aside>
+    </div>
 </body>
+<footer>
+    <address>
+        Éditeur responsable : <a href="mailto:b.renard84@gmail.com" class="email_adress">Benjamin Renard</a>
+        <p>Rue Goffart 2A 4560 Terwagne</p>
+    </address>
+</footer>
 </html>

@@ -23,29 +23,86 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-size: 100%;
     background-color: var(--light-orange);
     color: var(--grey);
     font-family: "Ubuntu-L", Helvetica, Arial, sans-serif;
 }
 
+.central {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: lightgray;
+    width: 100%;
+    padding: 1%;
+
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    main {
+        background-color: lightskyblue;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+    main {
+        background-color: springgreen;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .central {
+        flex-direction: row;
+    }
+}
+
 header {
+    display: flex;
+    flex-direction: column;
     background-color: var(--green);
+    
 }
 
 .header_logo {
-    width: 3.5%;
+    display: flex;
+    width: 2.5rem;
     padding: 1% 0 0 1%;
+
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .header_logo {
+        width: 5rem;
+    }
+
 }
 
 nav {
-    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    padding: 1% 0 0 1%;
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    nav {
+        padding: 1% 0 1% 1% ;
+
+    }
+
 }
 
 .nav_li {
     color: white;
     margin-right: 0.5%;
     text-decoration: none;
+    padding-right: 1%;
 }
 
 h1 {
@@ -81,5 +138,35 @@ h1,h2 {
 }
 
 .home_image {
-    max-width: 50%;
+    max-width: 70%;
+}
+
+
+
+aside {
+    background-color: var(--medium-green);
+    flex-grow: 1;
+}
+
+aside > section {
+    margin-bottom: 4rem;
+}
+
+.pdf_image {
+    width: 75px;
+}
+
+footer {
+    background-color: var(--green);
+    color: white;
+    height: 70px;
+    padding: 1%;
+}
+
+.email_adress {
+    color: white;
+}
+
+audio,video {
+    width: 98%;
 }

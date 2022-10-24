@@ -8,9 +8,10 @@
     <title>J'apprends à coder un site</title>
 </head>
 <body>
+
     <header>
 
-        <div>  
+        <div class="header_logo">  
             <img src="img/html.svg" alt="Logo HTML" class="header_logo">
             <img src="img/css.svg" alt="Logo CSS" class="header_logo">
         </div>   
@@ -21,56 +22,85 @@
         </nav> 
 
     </header>
+    <div class="central">
+        <main>
+            <h1>Bienvenue sur le site d'apprentissage du codage web</h1>
+            <img src="img/home.jpg" alt="Image d'accueil" class="home_image">
 
-        <h1>Bienvenue sur le site d'apprentissage du codage web</h1>
-        <img src="img/home.jpg" alt="Image d'accueil" class="home_image">
-        <a href="https://developer.mozilla.org/fr" target="_blank"><img src="img/mdn-web-docs.svg" alt="Logo MDN web docs"></a>
+            <p>Ceci est mon premier paragraphe. Son contenu "coulera"
+                automatiquement de ligne en ligne jusqu'à ce qu'il soit terminé
+                avec la balise de fermeture de paragraphe.</p>
 
-    <p>Ceci est mon premier paragraphe. Son contenu "coulera"
-        automatiquement de ligne en ligne jusqu'à ce qu'il soit terminé
-        avec la balise de fermeture de paragraphe.</p>
+            <p>Mon deuxième paragraphe. La balise d'ouverture du paragraphe à
+                automatiquement ajouté un "retour à la ligne", alors qu'un retour
+                à la ligne dans l'éditeur de code est complètement ignoré par
+                le navigateur. </p>
 
-    <p>Mon deuxième paragraphe. La balise d'ouverture du paragraphe à
-        automatiquement ajouté un "retour à la ligne", alors qu'un retour
-        à la ligne dans l'éditeur de code est complètement ignoré par
-        le navigateur. </p>
+            <p>HTML signifie « HyperText Markup Language » qu'on peut traduire par
+                « langage de balises pour l'hypertexte ». Il est utilisé afin de créer et de
+                représenter le contenu d'une page web et sa structure. D'autres technologies
+                sont utilisées avec HTML pour décrire la présentation d'une page (CSS) et/ou
+                ses fonctionnalités interactives (JavaScript). </p>
 
-    <p>HTML signifie « HyperText Markup Language » qu'on peut traduire par
-        « langage de balises pour l'hypertexte ». Il est utilisé afin de créer et de
-        représenter le contenu d'une page web et sa structure. D'autres technologies
-        sont utilisées avec HTML pour décrire la présentation d'une page (CSS) et/ou
-        ses fonctionnalités interactives (JavaScript). </p>
+            <p>L'« hypertexte » désigne les liens qui relient les pages web entre elles,
+                que ce soit au sein d'un même site web ou entre différents sites web. Les
+                liens sont un aspect fondamental du Web. Ce sont eux qui forment cette
+                « toile » (ce mot est traduit par web en anglais). En téléchargeant du contenu
+                sur l'Internet et en le reliant à des pages créées par d'autres personnes,
+                vous devenez un participant actif du World Wide Web. </p>
 
-    <p>L'« hypertexte » désigne les liens qui relient les pages web entre elles,
-        que ce soit au sein d'un même site web ou entre différents sites web. Les
-        liens sont un aspect fondamental du Web. Ce sont eux qui forment cette
-        « toile » (ce mot est traduit par web en anglais). En téléchargeant du contenu
-        sur l'Internet et en le reliant à des pages créées par d'autres personnes,
-        vous devenez un participant actif du World Wide Web. </p>
+            <h2>Une liste ordonnée</h2>
+            <ol start="50" reversed class="red font_M">
+                <li><span class="grey font_L">Bruxelles</span></li>
+                <li><span class="grey font_L">Liège</span></li>
+                <li><span class="grey font_L">Berlin</span></li>
+            </ol>
 
-    <h2>Une liste ordonnée</h2>
-    <ol start="50" reversed class="red font_M">
-        <li><span class="grey font_L">Bruxelles</span></li>
-        <li><span class="grey font_L">Liège</span></li>
-        <li><span class="grey font_L">Berlin</span></li>
-    </ol>
+            <h2>Une liste non ordonnée</h2>
+            <ul class="red font_M">
+                <li><span class="grey font_L">Charlotte</span></li>
+                <li><span class="grey font_L">Julie</span></li>
+                <li><span class="grey font_L">Valentin</span></li>
+            </ul>
 
-    <h2>Une liste non ordonnée</h2>
-    <ul class="red font_M">
-        <li><span class="grey font_L">Charlotte</span></li>
-        <li><span class="grey font_L">Julie</span></li>
-        <li><span class="grey font_L">Valentin</span></li>
-    </ul>
+            <h2>Exemples de fichiers audio</h2>
+            <audio controls muted>
+            <source src="audio/perception.oga" type="audio/ogg">
+            <source src="audio/perception.mp3" type="audio/mpeg">
+            </audio>
 
-    <h2>Exemples de fichiers audio</h2>
-    <audio controls muted>
-    <source src="audio/perception.oga" type="audio/ogg">
-    <source src="audio/perception.mp3" type="audio/mpeg">
-    </audio>
+            <h2>Exemples de fichiers vidéo</h2>
+            <video controls muted>
+                <source src="video/welcome.mp4" type="video/mp4">
+            </video>
+        </main>
+            <aside>
+                <section>
+                    <h2>Téléchargez mon CV ci-dessous</h2>
+                    <a href="documents/moncv.pdf"><img src="img/pdf.png" class="pdf_image"></a>
+                </section>
+                <section>
+                    <h2>Contactez-moi via ce site</h2>
+                    <p>Utilisez le <a href="contact.html">formulaire</a> de contact</p>
 
-    <h2>Exemples de fichiers vidéo</h2>
-    <video controls muted>
-        <source src="video/welcome.mp4" type="video/mp4">
-    </video>
+                </section>
+                <section>
+                    <h2>Pour appronfondir HTML et CSS</h2>
+                    <p>Utilisez toutes les ressources disponibles sur MDN Web Docs</p>
+                    <a href="https://developer.mozilla.org/fr/" target="_blank"><img src="img/mdn-web-docs.svg"></a>
+
+                </section>
+            </aside>
+        
+
+    </div><!-- End .central -->
 </body>
+
+<footer>
+    <address>
+        Éditeur responsable : <a href="mailto:b.renard84@gmail.com" class="email_adress">Benjamin Renard</a>
+        <p>Rue Goffart 2A 4560 Terwagne</p>
+    </address>
+</footer>
+
 </html>
